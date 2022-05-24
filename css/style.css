@@ -81,8 +81,16 @@ section {
     margin: 0 6rem;
     font-size: 4rem;
     padding: 1rem;
-    /* border-bottom: .1rem solid #fff4; */
     color: #fff;
+}
+
+.lead{
+    text-align: center;
+    margin: .5rem 1rem;
+    font-size: 2.3rem;
+    padding: 1rem;
+    color: #eee;
+    letter-spacing: 1px;
 }
 
 .heading span {
@@ -274,15 +282,14 @@ header .navbar ul li a:hover {
 }
 
 .skills {
-    /* background: linear-gradient(45deg, blueviolet, lightgreen); */
     padding: 15px 9%;
     padding-bottom: 100px;
 }
 
 .skills .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 50px;
 }
 
 .skills .box-container .box {
@@ -290,11 +297,11 @@ header .navbar ul li a:hover {
     border-radius: .5rem;
     background: #222;
     text-align: center;
-    padding: 30px 20px;
+    padding: 25px 20px;
 }
 
 .skills .box-container .box img {
-    height: 80px;
+    height: 50px;
 }
 
 .skills .box-container .box h3 {
@@ -312,31 +319,6 @@ header .navbar ul li a:hover {
 .skills .box-container .box:hover {
     box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
     transform: scale(1.03);
-}
-
-.gallery .container-slide {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.gallery .container-slide a {
-    height: 200px;
-    width: 300px;
-    margin: 17px auto;
-    border-radius: .5rem;
-    overflow: hidden;
-    box-shadow: 0 1rem .5rem rgba(0, 0, 0, .3);
-}
-
-.gallery .container-slide a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.gallery .container-slide a img:hover {
-    transform: scale(1.1);
 }
 
 .portfolio .container {
@@ -565,6 +547,14 @@ header .navbar ul li a:hover {
     html {
         font-size: 50%;
     }
+
+    .skills .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .skills .box-container .box img {
+        height: 50px;
+    }
 }
 
 @media (max-width:400px) {
@@ -578,6 +568,14 @@ header .navbar ul li a:hover {
 
     .about .row .counter .box {
         width: 100%;
+    }
+
+    .skills .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .skills .box-container .box img {
+        height: 50px;
     }
 
     .portfolio .box-container .box {
