@@ -1,5 +1,3 @@
-AOS.init();
-
 $(document).ready(function () {
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
@@ -75,4 +73,3 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 });
-
