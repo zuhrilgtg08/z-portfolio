@@ -50,6 +50,9 @@ window.onscroll = () => {
     themeToggler.classList.remove("active");
 };
 
+let alert = document.querySelector('.alert');
+let cancelButton = document.querySelector('#cancel-button');
+
 const scriptURL =
     'https://script.google.com/macros/s/AKfycbwZPQjadLTYcWY1-KIxLSW_k8OSBFGUDPIg57e2hDZFcwqAEXW5TtxW8MClZqiEbHS1/exec';
 const form = document.forms['submit-contact'];
@@ -61,13 +64,8 @@ form.addEventListener('submit', e => {
             body: new FormData(form)
         })
         .then(response => {
-            // ketika btn submit di klik tampilkan alert
-            Swal.fire({
-                icon: 'success',
-                title: 'Success',
-                text: 'Your message has been success'
-            });
-            // reset form
+            alert.classList.remove('hide');
+            cancelButton.addEventListener('click', () => alert.classList.add('hide'));
             form.reset();
             console.log('Success!', response)
         })
