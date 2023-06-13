@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,400;1,600&display=swap');
 
 :root {
-    /* --kuning: #f9ca24;
-    --gradient: linear-gradient(deeppink, purple);
-    --pink: deeppink;
-    --custom: linear-gradient(45deg, blueviolet, lightgreen); */
-    /* --hijau: #3867d6; */
-    --hijau: #20bf6b;
+    --theme: #1fc586;
 }
 
 * {
@@ -17,13 +12,12 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
     color: #fff;
 }
 
 *::selection {
-    background: var(--hijau);
+    background: var(--theme);
     color: #333;
 }
 
@@ -41,7 +35,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--hijau);
+    background: var(--theme);
 }
 
 body {
@@ -72,7 +66,7 @@ section {
 }
 
 .btn:hover {
-    background: var(--hijau);
+    background: var(--theme);
     color: #fff;
 }
 
@@ -94,7 +88,7 @@ section {
 }
 
 .heading span {
-    color: var(--hijau);
+    color: var(--theme);
 }
 
 header {
@@ -118,7 +112,7 @@ header .user img {
     border-radius: 50%;
     object-fit: cover;
     margin-top: 1rem;
-    border: .7rem solid var(--hijau);
+    border: .5rem solid var(--theme);
 }
 
 header .user .name {
@@ -151,7 +145,7 @@ header .navbar ul li a {
 }
 
 header .navbar ul li a:hover {
-    background: var(--hijau);
+    background: var(--theme);
 }
 
 #menu {
@@ -188,7 +182,7 @@ header .navbar ul li a:hover {
 }
 
 .home h2 span {
-    color: var(--hijau);
+    color: var(--theme);
 }
 
 .home p {
@@ -235,7 +229,7 @@ header .navbar ul li a:hover {
 .about .row .image img {
     width: 27rem;
     border-radius: 50%;
-    border: 1rem solid var(--hijau);
+    border: .7rem solid var(--theme);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
 }
 
@@ -249,7 +243,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .content h3 span {
-    color: var(--hijau);
+    color: var(--theme);
 }
 
 .about .row .content .info {
@@ -259,26 +253,8 @@ header .navbar ul li a:hover {
     line-height: 2;
 }
 
-.about .row .content .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    padding: 1rem 0;
-}
-
-.about .row .content .box-container .box {
-    flex: 1 1 20rem;
-}
-
-.about .row .content .box-container .box p {
-    font-size: 1.7rem;
-    color: #eee;
-    padding: .5rem 0;
-    line-height: 2;
-}
-
-.about .row .content .box-container .box p span {
-    color: var(--hijau);
+.about .row .content .info span {
+    color: var(--theme);
 }
 
 .skills {
@@ -306,7 +282,7 @@ header .navbar ul li a:hover {
 
 .skills .box-container .box h3 {
     color: #eee;
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px 0;
 }
 
@@ -417,7 +393,7 @@ header .navbar ul li a:hover {
 
 .contact .row .content .info h3 i {
     padding-right: 1rem;
-    color: var(--hijau);
+    color: var(--theme);
 }
 
 .alert {
@@ -438,7 +414,7 @@ header .navbar ul li a:hover {
 }
 
 .alert .modal {
-    background-color: #848188;
+    background-color: #111;
     width: 100%;
     padding: 24px;
     border-radius: 8px;
@@ -523,20 +499,7 @@ header .navbar ul li a:hover {
 }
 
 .footer span {
-    color: var(--hijau);
-}
-
-.top {
-    position: fixed;
-    bottom: 3.5rem;
-    right: 2rem;
-    z-index: 1000;
-    display: none;
-}
-
-.top img {
-    width: 8rem;
-    animation: float 3s linear infinite;
+    color: var(--theme);
 }
 
 @keyframes float {
